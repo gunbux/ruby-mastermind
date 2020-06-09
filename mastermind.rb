@@ -23,18 +23,30 @@ class Game
 
   def startGame(picker,chooser)
     '''picker picks, chooser chooses which color to enter, both must be Player classes'''
+    
   end
 
 end
 
 class Player
   attr_accessor :name
+  attr_accessor :type
 
-  def initialize(name)
+  def initialize(name,type)
     @name = name
+    @type = type
   end
 
 end
+
+class Computer>Player
+
+end
+
+class Human>Player
+
+end
+
 
 ##Test Cases
 
